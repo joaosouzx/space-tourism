@@ -1,0 +1,51 @@
+.crew {
+  background: linear-gradient(0deg, rgba(11, 13, 23, 0.5), rgba(11, 13, 23, 0.5)), url('../../public/assets/crew/background-crew-desktop.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.crew>div>div {
+  max-height: 500px;
+}
+
+.crew>div>p {
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.crew>div>p strong {
+  opacity: .25;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+  .crew {
+    background: linear-gradient(0deg, rgba(11, 13, 23, 0.5), rgba(11, 13, 23, 0.5)), url('../../public/assets/crew/background-crew-tablet.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .crew>div>div {
+    max-height: 100%;
+  }
+
+  .crew .flex {
+    flex-wrap: wrap;
+    padding-top: 25vh;
+  }
+
+  .crew .flex>div {
+    width: 100% !important;
+    flex: 1 0 100% !important;
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .crew {
+    background: linear-gradient(0deg, rgba(11, 13, 23, 0.5), rgba(11, 13, 23, 0.5)), url('../../public/assets/crew/background-crew-mobile.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}

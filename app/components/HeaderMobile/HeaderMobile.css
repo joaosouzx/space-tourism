@@ -1,0 +1,102 @@
+@media screen and (min-width: 768px) {
+  .headerMobile {
+    display: none;
+  }
+}
+
+.headerMobile {
+  position: absolute;
+  left: 50%;
+  top: 5vh;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 5;
+}
+
+.headerMobile > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+}
+
+.headerMobile div div:first-child,
+.headerMobile div div:last-child {
+  flex: 1;
+}
+
+.headerMobile div div:last-child {
+  text-align: end;
+}
+
+.headerMobile button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.headerMobile nav {
+  position: absolute;
+  top: -5vh;
+  right: 0;
+  width: 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(50px);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: all .5s;
+  overflow-x: hidden;
+}
+
+.headerMobile nav div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-align: end;
+  height: 15vh;
+  padding-right: 2rem;
+}
+
+.headerMobile .collapse {
+  transition: all .5s;
+  width: 70vw;
+  animation: closeMenu .5s ease-in-out;
+}
+
+@keyframes closeMenu {
+  from {width: 0;}
+  to {width: 70vw;}
+}
+
+.headerMobile a strong {
+  margin-right: 1rem;
+}
+
+.headerMobile li {
+  padding: 1rem 0;
+  margin-left: 3rem;
+  list-style: none;
+}
+
+.headerMobile .btn {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  border-right: 3px solid transparent;
+  margin-right: 0;
+  padding: 0;
+}
+
+.headerMobile .btn:hover {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  border-right: 3px solid rgba(255, 255, 255, 0.5);
+  margin-right: 0;
+}
+
+.headerMobile .active {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  border-right: 3px solid var(--white) !important;
+  margin-right: -3px solid var(--white) !important;
+}

@@ -1,0 +1,52 @@
+.technology {
+  background: linear-gradient(0deg, rgba(11, 13, 23, 0.1), rgba(11, 13, 23, 0.1)), url('../../public/assets/technology/background-technology-desktop.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.technology>div>div {
+  max-height: 500px;
+}
+
+.technology>div>p {
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.technology>div>p strong {
+  opacity: .25;
+  margin-right: 1rem;
+
+}
+
+@media screen and (max-width: 991px) {
+  .technology {
+    background: linear-gradient(0deg, rgba(11, 13, 23, 0.1), rgba(11, 13, 23, 0.1)), url('../../public/assets/technology/background-technology-tablet.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .technology>div>div {
+    max-height: 100%;
+  }
+
+  .technology .flex {
+    flex-wrap: wrap;
+    padding-top: 25vh;
+  }
+
+  .technology .flex>div {
+    width: 100% !important;
+    flex: 1 0 100% !important;
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .technology {
+    background: linear-gradient(0deg, rgba(11, 13, 23, 0.1), rgba(11, 13, 23, 0.1)), url('../../public/assets/technology/background-technology-mobile.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}

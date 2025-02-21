@@ -1,0 +1,114 @@
+.crewmans>div {
+  height: 100%;
+  max-height: 734px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 6rem;
+  margin-top: 2rem;
+}
+
+.crewmans div div {
+  flex: 1;
+}
+
+.crewman-image {
+  text-align: center;
+  position: relative;
+  -webkit-mask: -webkit-gradient(linear, center top, center bottom, color-stop(0.00, rgba(0, 0, 0, 1)), color-stop(0.35, rgba(0, 0, 0, 1)), color-stop(0.50, rgba(0, 0, 0, 1)), color-stop(0.65, rgba(0, 0, 0, 1)), color-stop(1.00, rgba(0, 0, 0, 0)));
+}
+
+.crewman-image img {
+  object-fit: contain;
+}
+
+.crewman-image,
+.crewman-content {
+  width: 100%;
+  height: 100%;
+}
+
+.crewman-content .text-4 {
+  opacity: .5;
+}
+
+.crewman-content .text-3,
+.crewman-content .text-4 {
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.crewman-content .text-9 {
+  color: var(--blue-300);
+  line-height: 32px;
+}
+
+.crewman-description {
+  height: 500px;
+  max-height: 500px !important;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.crewman-pagination button {
+  background: none;
+  border: none;
+  margin-right: 2.5rem;
+}
+
+.crewman-pagination .pagination {
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  background: #979797;
+  opacity: 0.17;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.crewman-pagination .pagination:hover {
+  opacity: .5;
+}
+
+.crewman-pagination .pagination-active {
+  background: var(--white);
+  opacity: 1;
+}
+
+.crewman-pagination .pagination-active {
+  opacity: 1 !important;
+}
+
+@media screen and (max-width: 991px) {
+  .crewmans>div {
+    flex-direction: column;
+    max-height: fit-content;
+    padding: 0 !important;
+  }
+
+  .crewman-image,
+  .crewman-content {
+    width: 100%;
+    max-width: 100% !important;
+  }
+
+  .crewman-image {
+    min-height: 500px;
+  }
+
+  .crewman-description {
+    height: fit-content;
+  }
+
+  .crewman-pagination {
+    display: flex;
+    justify-content: center;
+    column-gap: 2vh;
+    margin: 2rem auto 5rem auto;
+  }
+
+  .crewman-pagination button {
+    margin-right: 0;
+  }
+}

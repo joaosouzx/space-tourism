@@ -1,0 +1,51 @@
+.destination {
+  background: linear-gradient(0deg, rgba(11, 13, 23, 0.3), rgba(11, 13, 23, 0.3)), url('../../public/assets/destination/background-destination-desktop.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.destination>div>div {
+  max-height: 500px;
+}
+
+.destination>div>p {
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.destination>div>p strong {
+  opacity: .25;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+  .destination {
+    background: linear-gradient(0deg, rgba(11, 13, 23, 0.3), rgba(11, 13, 23, 0.3)), url('../../public/assets/destination/background-destination-tablet.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .destination>div>div {
+    max-height: 100%;
+  }
+
+  .destination .flex {
+    flex-wrap: wrap;
+    padding-top: 25vh;
+  }
+
+  .destination .flex>div {
+    width: 100% !important;
+    flex: 1 0 100% !important;
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .destination {
+    background: linear-gradient(0deg, rgba(11, 13, 23, 0.3), rgba(11, 13, 23, 0.3)), url('../../public/assets/destination/background-destination-mobile.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
