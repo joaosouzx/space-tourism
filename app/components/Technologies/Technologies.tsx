@@ -27,15 +27,7 @@ const technologies = [
 
 export default function Technologies() {
   const [selected, setSelected] = useState(technologies[0])
-
-  function showImg() {
-    if (window.matchMedia("(min-width: 992px)").matches) {
-      return <Image src={`${selected.image}-portrait.jpg`} alt={selected.title} fill />
-    } else {
-      return <Image src={`${selected.image}-landscape.jpg`} alt={selected.title} fill />
-    }
-  }
-
+  
   return (
     <div className="tech">
       <div className="container">
@@ -64,7 +56,10 @@ export default function Technologies() {
           </div>
         </div>
         <div className="tech-image">
-          {showImg()}
+          <picture>
+            <source media="(max-width: 991px)" srcSet={`${selected.image}-landscape.jpg`} />
+            <Image src={`${selected.image}-portrait.jpg`} alt={selected.title} fill />
+          </picture>
         </div>
       </div>
     </div>

@@ -103,7 +103,7 @@
 
   .tech-image {
     max-height: 310px;
-    min-height: 200px;
+    min-height: 310px;
     height: 310px;
     order: 1;
   }

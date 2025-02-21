@@ -20,7 +20,7 @@
 
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px), screen and (orientation: portrait) {
   .technology {
     background: linear-gradient(0deg, rgba(11, 13, 23, 0.1), rgba(11, 13, 23, 0.1)), url('../../public/assets/technology/background-technology-tablet.jpg') no-repeat center center;
     background-attachment: fixed;
@@ -34,6 +34,7 @@
   .technology .flex {
     flex-wrap: wrap;
     padding-top: 25vh;
+    min-height: 100vh;
   }
 
   .technology .flex>div {
