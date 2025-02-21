@@ -13,7 +13,7 @@ const headerLinks = [
 ]
 
 function showMenu() {
-  let nav = document.getElementById("menu") as HTMLElement | null;
+  const nav = document.getElementById("menu") as HTMLElement | null;
   if (!nav) return;
 
   nav.classList.toggle("collapse")

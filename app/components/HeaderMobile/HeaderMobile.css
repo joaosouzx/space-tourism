@@ -52,7 +52,7 @@
 .headerMobile nav div {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   text-align: end;
   height: 15vh;
   padding-right: 2rem;
